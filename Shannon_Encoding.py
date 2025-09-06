@@ -11,7 +11,9 @@ def equal(prob_list):
     return index
 
 prob_list = list(map(float, input("Enter numbers separated by space: ").split()))
-split_index = equal(prob_list)
+codes = []
+for i in range(0,len(prob_list)):
+    split_index = equal(prob_list)
 print(split_index)
 print(prob_list[:split_index])
 print(prob_list[split_index:])
